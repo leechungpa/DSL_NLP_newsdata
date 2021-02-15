@@ -80,7 +80,7 @@ def do_lang ( openapi_key, text ) :
         return return_result
 
 def save_txt(directory, first_index, idx, txt):
-    with open(directory+str(first_index+idx), 'w', encoding='utf-8') as f:
+    with open(directory+'/'+str(first_index+idx), 'w', encoding='utf-8') as f:
         f.write(txt)
 
 # Print iterations progress
